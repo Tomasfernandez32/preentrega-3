@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+h4{font-size: 1.5em;}
+p{font-size: 1em;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(240, 240, 240);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.35em;
+}
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+/*
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+*/
+/*
+a{
+    text-decoration: none;
+    color: white;
+}
+*/
+/*
+nav a{
+    font-weight: 600;
+    padding: right 10px; ;
+}
+
+nav a:hover{
+    color: black;
+}
+*/
+/*
+.tienda{
+
+}
+*/
+.tienda-foto{
+    width: 8cm;
+    height: 8cm;
+}
+
+hr{
+    width: 500px;   
+}
+
+main{
+    background-color: rgb(77, 158, 235);
+    padding: 0px;
+    text-align: center;
+    border: 0.75em solid rgb(2, 5, 8);
+    margin: 17em;
+    margin-block: 10em;
+    width: 80em;
+    height: 33em;
+
+}
+
+.proximo-partido-detalles{
+    align-items: center;
+    font-size: 30px;
+}  
+
+.proximo-partido-equipo1{
+    margin-left: 10px;
+    margin-top: 60px;
+    display: inline-flex;
+
+}
+
+.proximo-partido-equipo2{
+    margin-top: 90px;
+    margin-right: 40px;
+    
+}
+
+
+.proximo-partido-hora{
+font-size: 10em;
+display: flex ;
+}
+
+.argentina{
+    width: 5cm;
+    height: 6cm;
+}
+
+.panama{
+    width: 5cm;
+    height: 5cm;
+}
+.tienda{
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 0px;
+    text-align: center;
+    border: 15px solid rgb(2, 5, 8);
+    font-size: 50px;
+}
+
+.historia{
+    font-size: 50px;
+}
+.inicios{
+    width: 20cm;
+    height: 13cm;
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../unnamed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer-contenido{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+max-width: 1200px;
+margin: auto;
+margin-top: 100;
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.footer-box .logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.footer-box .terminos p{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 15px;
+}
+
+.footer-box h4{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.footer-box a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.footer-box a:hover{
+    opacity: 0.8;
+}
+
+.footer-box a .fab{
+    font-size: 20px;
+}
+
+.box-copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box-copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box-copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+/* media queries*/
+/*HEADER*/
+@media (min-width:350px) and (max-width:1040){
+    header{
+        width: 100%;
+        height: 100%;
+    }
+}
+   @media(max-width:700px){
+header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+
+    }
+}
+
+/*CONTADOR*/
+    @media (min-width:768px) and (max-width: 1023px)  {
+       main{
+        background-color: rgb(77, 158, 235);
+    padding: 12px;
+    text-align: center;
+   margin-left: 0.5em;
+   margin-right: 0.5em;
+    border: 0.45em solid rgb(2, 5, 8);
+    margin-block: 3em;
+    width: auto;
+    height: 25em;
+            }
+            .proximo-partido-detalles{
+                align-items: center;
+                font-size: 1,2em;
+            }
+}
+
+@media (max-width:767px){
+    main{
+        background-color: rgb(77, 158, 235);
+        padding: 12px;
+        text-align: center;
+       margin-left: 0.5em;
+       margin-right: 0.5em;
+        border: 0.45em solid rgb(2, 5, 8);
+        margin-block: 3em;
+        width: auto;
+        height: 25em; 
+    }
+    }
+.proximo-partido-detalles{
+    align-items: center;
+    font-size: 1,2em;
+}
+
+/*TIENDA*/
+@media (min-width:768px) and (max-width:1213){
+    .tienda{
+        padding: 100px;
+        text-align: center;
+        border: 0.1em solid black;
+        margin-block: 2em;
+        width: 20.5em;
+        height: 9.5em;
+        margin-left:  -0.5em;
+        margin-right: 5em;
+        flex-direction: column;
+    }
+}
+ /*JUGADORES*/
+ @media (min-width:768px) and (max-width:1023px){
+    .jugadores img{
+        flex-direction: row;
+        margin-left: 0.5em;
+    }
+ }
+
+ @media (max-width:767px){
+    .jugadores img{
+        flex-direction: row;
+        margin-left: 0.5em;
+    }
+ }
+ 
+
+
+
+
+
+/* HOVER ME SIRVE PARA MARCAR CON OTRO COLOR CUANDO PASO POR ARRIBA DE ALGO
+.nav-menu:hover{
+    background-color: #343434;
+}
+.footer-box a:hover{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
